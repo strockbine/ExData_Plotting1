@@ -66,4 +66,9 @@ lines(pc$Time, pc$Sub_metering_2,
       col = "red")
 lines(pc$Time, pc$Sub_metering_3,
       col = "blue")
+leg.text <- c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3")
+legend(x = "topright",
+       leg.text,
+       lty = c(1,1),
+       col = c("black", "red", "blue"))
 dev.off()

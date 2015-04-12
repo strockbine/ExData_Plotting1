@@ -52,6 +52,12 @@ plot(pc$Time, pc$Sub_metering_1,
      type = "n",
      xlab = "",
      ylab = "Global Active Power (kilowatts)")
+leg.text <- c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3")
+legend(x = "topright", 
+       leg.text, 
+       lty = c(1,1),
+       bty = "n",
+       col = c("black", "red", "blue"))
 lines(pc$Time, pc$Sub_metering_1,
       col = "black")
 lines(pc$Time, pc$Sub_metering_2,
